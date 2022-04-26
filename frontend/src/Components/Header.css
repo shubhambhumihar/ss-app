@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #191919;
+}
+
+.header > a {
+  width: 2vmax;
+  height: 2vmax;
+  margin: 1vmax 4vmax;
+}
+
+.header > a > svg {
+  font-size: 2vmax;
+  transition: all 0.5s;
+  color: #f7990e;
+}
+.header > a > svg:hover {
+  color: rgba(10, 199, 19, 0.719);
+  transform: scale(1.2);
+}
+@media screen and (max-width: 600px) {
+  .header > a {
+    width: 8vw;
+    height: 8vw;
+    margin: 2vmax 8vmax;
+  }
+  .header > a > svg {
+    font-size: 8vw;
+  }
+  .header > a > svg:hover {
+    color: rgba(10, 199, 19, 0.719);
+    transform: scale(1.2);
+  }
+}
